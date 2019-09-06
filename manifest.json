@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "chrome-ipv4-cidr-calculator",
+  "description": "calculate ipv4 cidr",
+  "icons": {
+    "48": "icon/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon/icon.png",
+    "default_popup": "src/popup.html"
+  }
+}
+
