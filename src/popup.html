@@ -1,58 +1,102 @@
-<table>
-  <tbody>
-    <tr>
-      <th>
-        CIDR Range
-      </th>
-      <td>
-        <input type="text" id="cidr">
-        <button id="click">
-          calculate
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Netmask
-      </th>
-      <td>
-        <input type="text" id="netmask" readonly>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Wildcard Bits
-      </th>
-      <td>
-        <input type="text" id="wild" readonly>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        First IP
-      </th>
-      <td>
-        <input type="text" id="first" readonly>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Last IP
-      </th>
-      <td>
-        <input type="text" id="last" readonly>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Total Host
-      </th>
-      <td>
-        <input type="text" id="total">
-      </td>
-    </tr>
-  </tbody>
-</table>
+<fieldset>
+  <legend>
+    CIDR to IP Range
+  </legend>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          CIDR Range
+        </th>
+        <td>
+          <input type="text" id="cidr">
+          <button id="calc-cidr">
+            calculate
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Netmask
+        </th>
+        <td>
+          <input type="text" id="netmask" readonly>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Wildcard Bits
+        </th>
+        <td>
+          <input type="text" id="wild" readonly>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          First IP
+        </th>
+        <td>
+          <input type="text" id="first" readonly>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Last IP
+        </th>
+        <td>
+          <input type="text" id="last" readonly>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Total Host
+        </th>
+        <td>
+          <input type="text" id="total">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>
+
+<fieldset>
+  <legend>
+    IP Range To CIDR
+  </legend>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          Start
+        </th>
+        <td>
+          <input type="text" id="ip-start">
+        </td>
+      </tr>
+      <tr>
+        <th>
+          End
+        </th>
+        <td>
+          <input type="text" id="ip-end">
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <button id="calc-range">
+            calculate
+          </button>
+        </th>
+        <td>
+          <textarea id="ip-cidr-result" readonly>
+          </textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>
 
 <script src="popup.js"></script>
 
